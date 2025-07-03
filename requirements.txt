@@ -1,0 +1,4 @@
+python-slugify
+google-genai
+playwright
+python-dotenv
