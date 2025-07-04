@@ -95,8 +95,8 @@ python run_agent.py --url https://example.com
 ```
 
 This will:
-- Generate `screenshots/before.png` & `screenshots/after.png`
-- Produce `results/report.md` (single output)
+- Generate `before.png` & `after.png`
+- Produce `report.md`
 
 ---
 
@@ -112,14 +112,13 @@ https://google.com
 Run:
 
 ```bash
-python batch_accessibility.py --url-list urls.txt
+python run_agent.py --urls-file test/urls.txt  
 ```
 
 Each site gets its own:
-- `screenshots/<slug>-before.png`
-- `screenshots/<slug>-after.png`
+- `results/<slug>-before.png`
+- `results/<slug>-after.png`
 - `results/<slug>/report.md`
-- `results/<slug>/raw_output.json`
 
 ---
 
